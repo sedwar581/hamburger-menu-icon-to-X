@@ -1,0 +1,42 @@
+body, html {
+    background-color: black;
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: -32;
+}
+
+.x_bar {
+    border-radius: 1px;
+    position: absolute;
+    height: 15px;
+    width: 69px;
+    display: inline;
+    transition: transform ease-in 0.25s;
+    z-index: 2;
+}
+
+#lower_bar {
+    background-color: rgb(218, 218, 218);
+    margin: 56px 0 0 0;
+}
+    /* #lower_bar:hover {
+        transform: matrix(0.866, -0.5, 0.5, 0.866, 0, -25);
+    } */
+
+#toggle-menu {
+    position: absolute;
+    color: aliceblue;
+    opacity: 0.9;
+    transition: opacity ease-in 0.15s;
+    z-index: -2;
+}
+
+#upper_bar {
+    background-color: rgb(203, 203, 203);
+    margin: 10px 0 0px 0;
+}
+    /* #upper_bar:hover {
+        transform: matrix(0.866, 0.5, -0.5, 0.866, 0, 25);
+    } */
