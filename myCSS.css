@@ -19,7 +19,7 @@ body, html {
     height: 11px;
     width: 69px;
     display: inline;
-    transition: transform ease-in 0.25s;
+    transition: transform 0.25s ease-in 0.25s;
     z-index: 2;
 }
 
@@ -32,11 +32,19 @@ body, html {
     position: absolute;
     color: aliceblue;
     opacity: 0.9;
-    transition: opacity ease-in 0.15s;
+    transition: opacity 0.15s ease-in 0.15s;
     z-index: -2;
 }
 
 #upper_bar {
     background-color: rgb(119, 119, 119);
     margin: 12px 0 0px 0;
+}
+
+.upper_bar_trans {
+    transform: matrix(0.7, 0.8, -0.6, 0.6, 0, 20);
+}
+
+.lower_bar_trans {
+    transform: matrix(0.7, -0.8, 0.6, 0.6, 0, -25);
 }
