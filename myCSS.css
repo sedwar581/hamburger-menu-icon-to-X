@@ -15,10 +15,10 @@ body, html {
 }
 
 .menu_bars {
-    border-radius: 3px;
+    border-radius: 1px;
     position: absolute;
-    height: 9px;
-    width: 46.5px;
+    height: 4.75px;
+    width: 27.25px;
     display: inline;
     transition: transform 0.35s ease-in-out 0.15s;
     z-index: 2;
@@ -26,7 +26,7 @@ body, html {
 
 #lower_bar {
     background-color: rgb(253, 253, 253);
-    margin: 39px 0 0 0;
+    margin: 22.75px 0 0 0;
 }
 
 #toggle-menu {
@@ -39,5 +39,5 @@ body, html {
 
 #upper_bar {
     background-color: rgb(253, 253, 253);
-    margin: 8px 0 0px 0;
+    margin: 4px 0 0px 0;
 }
