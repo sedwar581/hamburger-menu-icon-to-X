@@ -1,4 +1,4 @@
-function transitionMenu() {
+function transitionMobileMenu() {
     let upper_bar = document.getElementById("upper_bar");
     let lower_bar = document.getElementById("lower_bar");
     let menu_icon = document.getElementById("toggle-menu");
@@ -17,6 +17,8 @@ function transitionMenu() {
         upper_bar.setAttribute("style", "transform: matrix(1, 0, 0, 1, 0, 0)");
         lower_bar.setAttribute("style", "transform: matrix(1, 0, 0, 1, 0, 0)");
         menu_anchor.setAttribute("class", "menu_closed");
-        menu_icon.setAttribute("style", "opacity: 1");
+        setTimeout(function() {
+            menu_icon.setAttribute("style", "opacity: 1");
+        }, 150);
     }
 }
