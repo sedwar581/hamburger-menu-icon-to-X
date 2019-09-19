@@ -1,14 +1,23 @@
 
-function transitionToX() {
-    let top_bar = document.getElementById("upper_bar");
-    let bottom_bar = document.getElementById("lower_bar");
+function transitionMenu() {
+    let upper_bar = document.getElementById("upper_bar");
+    let lower_bar = document.getElementById("lower_bar");
     let menu_icon = document.getElementById("toggle-menu");
-    
-    console.log("Hello World.");
+    let menu_button = document.getElementById("menu-button");
 
-    menu_icon.setAttribute("style", "opacity: 0.05");
-    top_bar.setAttribute("style", "transform: matrix(0.7, 0.8, -0.6, 0.6, 0, 20)");
-    bottom_bar.setAttribute("style", "transform: matrix(0.7, -0.8, 0.6, 0.6, 0, -25)");
+    console.log(menu_button.className);
 
-    // top_bar.setAttribute("class", "upper_bar_trans");
+    if ( menu_button.className == "menu_closed" ) {
+        console.log(" opening the menu. ");
+        menu_icon.setAttribute("style", "opacity: 0.05");
+        upper_bar.setAttribute("style", "transform: matrix(0.8, 0.8, -0.5, 0.8, 0, 16)");
+        lower_bar.setAttribute("style", "transform: matrix(0.8, -0.8, 0.5, 0.8, 0, -15)");
+        menu_button.setAttribute("class", "menu_opened");
+    } else if ( menu_button.className == "menu_opened" ) {
+        console.log(" closing the menu. ");
+        upper_bar.setAttribute("style", "transform: matrix(0.8, 0, 0, 0.8, 0, 0)");
+        lower_bar.setAttribute("style", "transform: matrix(0.8, 0, 0, 0.8, 0, 0)");
+        menu_button.setAttribute("class", "menu_closed");
+        menu_icon.setAttribute("style", "opacity: 1");
+    }
 }

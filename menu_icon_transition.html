@@ -2,14 +2,15 @@
 <html>
     <head>
         <link rel="stylesheet" href="./myCSS.css">
-        <script src="./myJS.js" type="text/javascript"></script>
+        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <a href="" class="menu-icon" onfocus="transitionToX()">
-            <div class="x_bar" id="upper_bar"></div>
-            <div class="x_bar" id="lower_bar"></div>
+        <a id="menu-button" class="menu_closed" href="javascript:void(0);" onclick="transitionMenu()">
+            <div class="menu_bars" id="upper_bar"></div>
+            <div class="menu_bars" id="lower_bar"></div>
             <i id="toggle-menu" class="fa fa-bars fa-5x" aria-hidden="true"></i>
         </a>
+        <script src="./myJS.js" type="text/javascript"></script>
     </body>
 </html>

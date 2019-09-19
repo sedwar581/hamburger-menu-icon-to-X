@@ -1,7 +1,8 @@
-a.menu-icon {
+#menu-button {
     position: absolute;
     top: 20px;
     text-align: center;
+    display: contents;
 }
 
 body, html {
@@ -13,38 +14,30 @@ body, html {
     z-index: -32;
 }
 
-.x_bar {
+.menu_bars {
     border-radius: 3px;
     position: absolute;
-    height: 11px;
-    width: 69px;
+    height: 9px;
+    width: 46.5px;
     display: inline;
-    transition: transform 0.25s ease-in 0.25s;
+    transition: transform 0.35s ease-in-out 0.15s;
     z-index: 2;
 }
 
 #lower_bar {
-    background-color: rgb(119, 119, 119);
-    margin: 58px 0 0 0;
+    background-color: rgb(253, 253, 253);
+    margin: 39px 0 0 0;
 }
 
 #toggle-menu {
     position: absolute;
-    color: aliceblue;
+    color: rgb(253, 253, 253);
     opacity: 0.9;
     transition: opacity 0.15s ease-in 0.15s;
     z-index: -2;
 }
 
 #upper_bar {
-    background-color: rgb(119, 119, 119);
-    margin: 12px 0 0px 0;
-}
-
-.upper_bar_trans {
-    transform: matrix(0.7, 0.8, -0.6, 0.6, 0, 20);
-}
-
-.lower_bar_trans {
-    transform: matrix(0.7, -0.8, 0.6, 0.6, 0, -25);
+    background-color: rgb(253, 253, 253);
+    margin: 8px 0 0px 0;
 }
