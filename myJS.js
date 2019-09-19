@@ -3,7 +3,7 @@ function transitionMenu() {
     let upper_bar = document.getElementById("upper_bar");
     let lower_bar = document.getElementById("lower_bar");
     let menu_icon = document.getElementById("toggle-menu");
-    let menu_button = document.getElementById("menu-button");
+    let menu_button = document.getElementById("menu-anchor");
 
     console.log(menu_button.className);
 
