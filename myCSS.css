@@ -20,7 +20,7 @@ body, html {
     height: 4.75px;
     width: 27.25px;
     display: inline;
-    transition: transform 0.35s ease-in-out 0.15s;
+    transition: transform 0.35s ease-out 0.15s;
     z-index: 2;
 }
 
